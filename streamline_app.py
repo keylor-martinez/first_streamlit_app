@@ -41,7 +41,7 @@ try:
   else:
     streamlit.text("ME CAGO EN LA PUTA")
 except URLError as e:
-  return fruityvice_normalized
+  streamlit.error()
 
 streamlit.stop()
 
