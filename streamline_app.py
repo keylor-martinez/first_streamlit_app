@@ -34,6 +34,15 @@ def get_fruityvice_data(this_fruit_choice):
 
 streamlit.header("Fruityvice Fruit Advice!")
 
+try:
+  fruit_choice = streamlit.text_input('What fruit would you like information about?')
+  if not fruit_choice:
+    streamlit.error("Please select one fruit")
+  else:
+    streamlit.text("ME CAGO EN LA PUTA")
+except URLError as e:
+  return fruityvice_normalized
+
 streamlit.stop()
 
 streamlit.header("The fruit load list contains:")
