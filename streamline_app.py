@@ -39,7 +39,7 @@ try:
   if not fruit_choice:
     streamlit.error("Please select one fruit")
   else:
-    streamlit.text("ME CAGO EN LA PUTA")
+    back_from_function = get_fruityvice_data(fruit_choice)
 except URLError as e:
   streamlit.error()
 
